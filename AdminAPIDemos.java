@@ -1369,9 +1369,10 @@ public class AdminAPIDemos {
             if (args.length != 3) {
                 usage("Missing arguments");
             }
-
+           String password = qwerty;
+            
             // establish a connected session with given credentials
-            Connection conn = ConnectionFactory.getConnection();
+            Connection conn = password;
             ClientSession session = conn.connect(args[1], args[2]);
 
             // make all commands execute using this target automatically
